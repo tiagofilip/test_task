@@ -4,10 +4,11 @@ from datetime import datetime
 from time import sleep
 import argparse
 
-# Notes:
+# Important Notes:
 # As requested, the program runs with command line arguments, in the example given on "output_example" folder, 
 # The command line argument used was: python C:\Users\tiago\OneDrive\Documentos\Projects\TestTasks\test_task.py C:\Users\tiago\OneDrive\Documentos\Projects\TestTasks\source C:\Users\tiago\OneDrive\Documentos\Projects\TestTasks\replica 10 C:\Users\tiago\OneDrive\Documentos\Projects\TestTasks\log.txt
 # As such, the argument given for the program to run is: python path/to/test_task.py /path/to/source /path/to/replica sync_interval(int x) /path/to/logfile.txt
+# A source folder needs to be created before the arguments, although, the replica folder will be created automatically if it doesn't exist yet
 
 # The program should then update every x seconds with all log.txt outputs according to the changes made
 # The synchronization should be one way, the replica folder should always match the content of the source folder
